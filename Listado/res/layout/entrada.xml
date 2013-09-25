@@ -6,18 +6,24 @@
 
     <ImageView
         android:id="@+id/imageView_imagen"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:contentDescription="Descripción del contenido de la imagen"
+        android:contentDescription="Descripció del contingut de la imatge"
         android:src="@android:drawable/ic_menu_gallery" />
+
+
+
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="vertical" >
+
 
         <TextView
             android:id="@+id/textView_superior"

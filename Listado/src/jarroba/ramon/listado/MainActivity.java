@@ -31,13 +31,13 @@ public class MainActivity extends Activity {
         ArrayList<Lista_entrada> datos = new ArrayList<Lista_entrada>();  
         
         datos.add(new Lista_entrada(R.drawable.im_farigola, "FARIGOLA", "També anomenada timó, timonet o tomell (del llatí Thymus)."));
-        datos.add(new Lista_entrada(R.drawable.im_menta, "MENTA", "Fa olor que t'hi cagues."));
+        datos.add(new Lista_entrada(R.drawable.im_menta, "MENTA", "Fa olor que t'hi cagues. I aixo es un text per a veure que passa quan afegim mes linies a la descripcio, perque clar, la idea es posar aqui una parrafada del copon, i com que no hi cabra, la gent hi clicara a sobre per poder veure la resta de text. Pero com molt be va fer notar el Joan, els pocs segons que el popup es visible potser no son suficientes per arribar a llegir-ho tot, i per tant hem de pensar una altra manguera de fer-ho, o afegir segons al tema... no se"));
         datos.add(new Lista_entrada(R.drawable.im_ginesta, "GINESTA", "Té un port al costat de Castelldefels."));
         datos.add(new Lista_entrada(R.drawable.im_fonoll, "FONOLL", "Ma avia sempre en tenia per casa."));
-        datos.add(new Lista_entrada(R.drawable.im_card, "CARD", "Feo feo."));
+        datos.add(new Lista_entrada(R.drawable.im_card, "CARD", "Guapo guapo."));
         datos.add(new Lista_entrada(R.drawable.im_flordeneu, "FLOR DE NEU", "Quan les plantes fan bukkakes."));
         datos.add(new Lista_entrada(R.drawable.im_espa, "ESPARRAGUERA", "Poble quillo."));
-        
+
         lista = (ListView) findViewById(R.id.ListView_listado);
         lista.setAdapter(new Lista_adaptador(this, R.layout.entrada, datos){
 			@Override
@@ -63,7 +63,7 @@ public class MainActivity extends Activity {
 			public void onItemClick(AdapterView<?> pariente, View view, int posicion, long id) {
 				Lista_entrada elegido = (Lista_entrada) pariente.getItemAtPosition(posicion); 
                 
-                CharSequence texto = "Seleccionado: " + elegido.get_textoDebajo();
+                CharSequence texto = elegido.get_textoDebajo();
                 Toast toast = Toast.makeText(MainActivity.this, texto, Toast.LENGTH_LONG);
                 toast.show();
 			}

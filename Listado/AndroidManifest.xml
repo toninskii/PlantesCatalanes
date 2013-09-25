@@ -11,11 +11,11 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Herbes"
         android:theme="@style/AppTheme" >
         <activity
             android:name="jarroba.ramon.listado.MainActivity"
-            android:label="@string/app_name" >
+            android:label="Herbes" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
