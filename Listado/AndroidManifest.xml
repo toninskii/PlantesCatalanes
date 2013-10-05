@@ -10,7 +10,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/herbes_icon"
+        android:icon="@drawable/icon"
         android:label="Herbes"
         android:theme="@style/AppTheme" >
         <activity
