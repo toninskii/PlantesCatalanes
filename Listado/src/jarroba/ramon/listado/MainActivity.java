@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.LinearLayout;
+import com.google.ads.*;
 
 
 
@@ -27,6 +29,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listado);
 
+        AdView adView = new AdView(this, AdSize.SMART_BANNER, "pub-9494751952909106");
+        LinearLayout layout = (LinearLayout)findViewById(R.id.anuncio);
+        layout.addView(adView);
+        adView.loadAd(new AdRequest());
         
         ArrayList<Lista_entrada> datos = new ArrayList<Lista_entrada>();  
         
