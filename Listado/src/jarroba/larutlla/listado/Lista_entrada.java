@@ -1,4 +1,4 @@
-package jarroba.ramon.listado;
+package jarroba.larutlla.listado;
 
 /** Handler para listado.
  * @author Ramon Invarato Menndez

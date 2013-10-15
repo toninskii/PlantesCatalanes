@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="jarroba.ramon.listado"
+    package="jarroba.larutlla.listado"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -17,7 +17,7 @@
         android:label="Herbes"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="jarroba.ramon.listado.MainActivity"
+            android:name="jarroba.larutlla.listado.MainActivity"
             android:label="Herbes" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
