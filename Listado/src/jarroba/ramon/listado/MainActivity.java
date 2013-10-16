@@ -29,14 +29,14 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listado);
 
-        AdView adView = new AdView(this, AdSize.SMART_BANNER, "pub-9494751952909106");
+        AdView adView = new AdView(this, AdSize.SMART_BANNER, "ca-app-pub-9494751952909106/6013922277");
         LinearLayout layout = (LinearLayout)findViewById(R.id.anuncio);
         layout.addView(adView);
         adView.loadAd(new AdRequest());
         
         ArrayList<Lista_entrada> datos = new ArrayList<Lista_entrada>();  
         
-        datos.add(new Lista_entrada(R.drawable.im_borraja, "BORRAJA, BORRATXA", "Planta depurativa que es fa servir per aliviar simptomes del refredat com ara la tos."));
+        datos.add(new Lista_entrada(R.drawable.im_borraja, "BORRAJA, BORRATXA", "Planta depurativa que es fa servir per alleugerir simptomes del refredat com ara la tos."));
         datos.add(new Lista_entrada(R.drawable.im_dent, "DENT DE LLEÓ", "La infusió de les flors, així com la melmelada d'aquestes, és usada per al mal de gola, menjada directament o ensucrant una infusió o llet calenta, igual que la mel."));
         datos.add(new Lista_entrada(R.drawable.im_espigol, "ESPÍGOL, LAVANDA", "Elimina la sensació de nervis i ansietat. També es fa servir per mals de cap i té propietats cicatritzants."));
         datos.add(new Lista_entrada(R.drawable.im_farigola, "FARIGOLA, FRIGOLA", "Les seves propiestats principals serien ajudar al tractament de dolors musculars i estimulant digestiu. Es fa servir en malaties com ara fibromialgia i anorexia."));
