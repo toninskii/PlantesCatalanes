@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listado);
 
-        AdView adView = new AdView(this, AdSize.SMART_BANNER, "pub-9494751952909106");
+        AdView adView = new AdView(this, AdSize.SMART_BANNER, "ca-app-pub-9494751952909106/6013922277");
         LinearLayout layout = (LinearLayout)findViewById(R.id.anuncio);
         layout.addView(adView);
         adView.loadAd(new AdRequest());
