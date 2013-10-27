@@ -1,8 +1,8 @@
 package produccions.larutlla.herbes;
 
 /** Handler para listado.
- * @author Ramon Invarato Menndez
- * www.jarroba.es
+ * @author LaRutlla
+ * www.larutlla.eu
  */
 public class Lista_entrada {
 	private int idImagen; 
